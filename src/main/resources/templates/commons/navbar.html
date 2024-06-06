@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+</head>
+<body>
+    <nav th:fragment="navbar" class="container nav-container">
+        <ul class="nav-group">
+            <li>
+                <a th:href="@{/}" class="nav-item-link nav-item-logo">Pixer</a>
+            </li>
+            <li>
+                <a th:href="@{/about-us}" class="nav-item-link">เกี่ยวกับเรา</a>
+            </li>
+        </ul>
+        <ul class="nav-group">
+            <li>
+                <a href="#" class="nav-item-link nav-register-btn">สมัครสมาชิก</a>
+            </li>
+            <li>
+                <a href="#" class="nav-item-link">เข้าสู่ระบบ</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
